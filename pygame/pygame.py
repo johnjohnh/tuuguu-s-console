@@ -25,22 +25,27 @@ def paused():
         pause = input("paused press enter to continue")
         if(pause != "1"):
             break
-        
+
 
 
 system = os.system
 
 system("color a")
-system("mode con cols=79 lines=20")
+system("mode con cols=95 lines=30")
 while(True):
     system("cls")
-    print("\n\n\n")
-    print("                    /\        |    |     0                           ")
-    print("                   /  \       |    |     |                           ")
-    print("                  /----\      |----|     |                           ")
-    print("                 /__()__\     |    |     |                           ")
-    print("                /________\    |    |     |                           \n\n")
-    command = input("command : ")
+    print("\n\n")
+    print("█▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█   this is a experimental console , it will be changed after some time")
+    print("█░░╦─╦╔╗╦─╔╗╔╗╔╦╗╔╗░░█                         if you have questions commment      ")
+    print("█░░║║║╠─║─║─║║║║║╠─░░█                             or ask me when im active           ")
+    print("█░░╚╩╝╚╝╚╝╚╝╚╝╩─╩╚╝░░█                     at tuugii0660#6913 (ha its the sex number)     ")
+    print("█▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█\n\n           type in help to see the commands \n\n")
+    command = input("         command : ")
+    while(command == "help"):
+        print("\n\n commands : \n 1. math \n 2.ip lookup(look up ip of a website) \n 3.color (change color )")
+        paused()
+        print("\n\n\n\n\n")
+        break
     while(command == "math"):
         system("cls")
         print("Please select type :")
@@ -79,8 +84,26 @@ while(True):
             system("cls")
             break
     while(command == "ip lookup"):
-        print('to go back please enter "back"\n\n')
-        ip = input("enter ip : ")
+        system("cls")
+        print("                            ,-.")
+        print("       ___,---.__          /'|`\          __,---,___")
+        print("    ,-'    \`    `-.____,-'  |  `-.____,-'    //    `-.")
+        print("  ,'        |           ~'\     /`~           |        `.")
+        print(" /      ___//              `. ,'          ,  , \___      \ ")
+        print("|    ,-'   `-.__   _         |        ,    __,-'   `-.    |")
+        print("|   /          /\_  `   .    |    ,      _/\          \   |")
+        print("\  |           \ \`-.___ \   |   / ___,-'/ /           |  /")
+        print(" \  \           | `._   `\\  |  //'   _,' |           /  /")
+        print("  `-.\         /'  _ `---'' , . ``---' _  `\         /,-'")
+        print("     ``       /     \    ,='/ \`=.    /     \       ''")
+        print("             |__   /|\_,--.,-.--,--._/|\   __| ")
+        print("             /  `./  \\`\ |  |  | /,//' \,'  \ ")
+        print("            /   /     ||--+--|--+-/-|     \   \ ")
+        print("           |   |     /'\_\_\ | /_/_/`\     |   |")
+        print("            \   \__, \_     `~'     _/ .__/   /")
+        print("             `-._,-'   `-._______,-'   `-._,-'")
+        print('\n\n      to go back please enter "back"\n\n')
+        ip = input("     enter ip or url : ")
         if(ip != "back"):
             system("nslookup "+ip)
             paused()
@@ -112,5 +135,7 @@ while(True):
         print("\n\n the color has changed :d")
         paused()
         break
+    
+
 
         
