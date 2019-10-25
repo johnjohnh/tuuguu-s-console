@@ -21,11 +21,8 @@ def devide(num1,num2):
         print(float(num2/num1))
 def paused():
     while(True):
-        system("color b")
         time.sleep(1)
         pause = input("paused press enter to continue")
-        time.sleep(1)
-        pause = input("                              ")
         if(pause != "1"):
             break
         
@@ -43,7 +40,6 @@ while(True):
     print("                  /----\      |----|     |                           ")
     print("                 /__()__\     |    |     |                           ")
     print("                /________\    |    |     |                           \n\n")
-    system("color a")
     command = input("command : ")
     while(command == "math"):
         system("cls")
@@ -90,5 +86,31 @@ while(True):
             paused()
         if(ip == "back"):
             break
+    while(command == "color"):
+        system("cls")
+        print("The command is : [color of the backround][color of the text] ")
+        print(" color code | color name")
+        print("      0     |    black  ")
+        print("      1     |    blue   ")
+        print("      2     |    green  ")
+        print("      3     |    cyan   ")
+        print("      4     |     red   ")
+        print("      5     |   magenta ")
+        print("      6     |  yellow/brown")
+        print("      7     |    white  ")
+        print("      8     |    gray   ")
+        print("      9     | bright blue")
+        print("      a     | bright green")
+        print("      b     | bright cyan")
+        print("      c     | bright red")
+        print("      d     | bright pink")
+        print("      e     | bright yellow")
+        print("      f     | white(idk why)")
+        color = str(input("color of the backround (make it 0 for standart ) : "))
+        color2 = str(input("color of the text (a for standart)  : "))
+        system("color "+color+color2)
+        print("\n\n the color has changed :d")
+        paused()
+        break
 
         
