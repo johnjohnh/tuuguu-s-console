@@ -1,7 +1,16 @@
 import os
 import time
-
-
+system = os.system
+def  stopwatch(secs):
+    start = time.time()
+    time.clock()
+    elapsed = 0
+    while elapsed < seconds:
+        elapsed = time.time() - start
+        time.sleep(1)
+        print(elapsed)
+        if(elapsed >= secs):
+            system("shutdown -s")
 
 def adding(num1, num2):
     print("the answer : ")
@@ -26,10 +35,6 @@ def paused():
         if(pause != "1"):
             break
 
-
-
-system = os.system
-
 system("color a")
 system("mode con cols=95 lines=30")
 while(True):
@@ -52,7 +57,7 @@ while(True):
         print("1. adding\n")
         print('2. multiply\n')
         print("3. devide\n")
-        print('3. remove\n')
+        print('4. remove\n')
         print("type in 'back' to back to the main menu")
         choice = input("choice : ")
         if(choice == '1'):
@@ -135,6 +140,15 @@ while(True):
         print("\n\n the color has changed :d")
         paused()
         break
+    while(command == "cmd"):
+        cmd = input("User/cmd :")
+        if(cmd == "quit"):
+            break
+        system(cmd)
+    while(command == "shutdown timer"):
+        seconds = int(input("enter time in secs : "))
+        stopwatch(seconds)
+        
     
 
 
